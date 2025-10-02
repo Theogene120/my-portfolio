@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="dark">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>THEOGENE IGIRANEZA</title>
+</head>
+<body class="dark:bg-black dark:text-white relative">
+    <nav class="border-b border-gray-300 dark:border-gray-700 sticky top-0 bg-gray-100 dark:bg-gray-900  z-50 px-4">
+      <div class="flex justify-between items-center py-6 lg:px-10">
+        <div class="flex items-center gap-2 group:">
+          <div><a class="text-xl hover:underline  font-bold hover:text-[#5D40EF]" href="index.html"><i class="fa-solid fa-arrow-left ml-4 pr-3"></i></a></div>
+          <div class="flex"><p><img class="h-10 rounded-full" src="/realme.jpg" alt="pro"></p><a class="bg-gradient-to-r from-[#5D40EF] to-[#DE75F3] bg-clip-text text-transparent font-bold py-2 px-2 rounded-lg hover:bg-gradient-to-l hover:scale-105 duration-500" href="#members">Theogene</a></div>  
+        </div>
+        <div class="hidden md:flex gap-10 items-center">
+          <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#">About Me</a>
+          <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline md:hidden lg:block" href="#technology">Technology Stack</a>
+          <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#skills">Skills</a>
+          <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#experience">Experience</a>
+          <div class="flex order-2"><p id="suggestion" class="border border-gray-400 cursor-pointer bg-[#5D40EF] rounded-lg text-white font-semibold hover:bg-[#DE75F3] transform duration-100 py-2 px-3">Leave a Review</p></div> 
+          <div>
+            <p class="cursor-pointer" id="moon"><i class="fa-solid fa-moon"></i></p>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <label>
+            <input type="checkbox" class="peer absolute left-0 top-0 w-8 h-8 opacity-0 cursor-pointer" />
+            <i class="fa-solid fa-bars text-2xl cursor-pointer peer-checked:block"></i>
+            <div class="hidden w-60 h-screen bg-gray-300 pt-32 rounded-xl transform px-10 -right-4 top-0 peer-checked:flex flex-col absolute gap-5 "> 
+              <div class="flex justify-between"><a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#">About me</a><p class="text-xl cursor-pointer"><i class="fa-solid fa-xmark"></i></p></div>
+              <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#technology">Technology Stack</a>
+              <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#skills">Skills</a>
+              <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#experience">Experience</a>
+              <a class="text-lg font-semibold opacity-70 hover:opacity-100 hover:underline" href="#hobbies">Hobbies</a>
+              <div class="flex "><p id="review" class="border border-gray-400 cursor-pointer bg-[#5D40EF] rounded-lg text-white font-semibold hover:bg-[#DE75F3] transform duration-100 py-2 px-3">Leave a Review</p></div> 
+              
+          </div>
+          </label>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Leave a review -->
+    <div  id="actualsug" class="z-50 hidden absolute inset-0 ">
+        <div class="bg-[#5D40EF] inset-0 bg-opacity-70 absolute"></div>
+        <div class="sticky border-2 p-5 rounded-lg border-green-400 w-[20rem] md:w-[30rem] top-[30%] left-8 md:left-36 lg:left-[30%]">
+            <p class="font-semibold font-serif text-lg text-white">Full Name:</p>
+            <p class="w-full font-serif"><input id="name" type="text" class="dark:text-black border w-full px-2 border-gray-400 focus:border-2 focus:border-[#DE75F3] outline-none"></p>
+            <p class="font-semibold font-serif text-lg text-white">Email:</p>
+            <p class="w-full font-serif"><input id="email" type="email" class="dark:text-black w-full px-2 border border-gray-400 focus:border-2 focus:border-[#DE75F3] outline-none"></p>
+            <p class="font-semibold font-serif text-lg text-white">Comment:</p>
+            <textarea name="comment" id="comment" class="border dark:text-black border-gray-400 w-full font-serif px-2 focus:border-2 focus:border-[#DE75F3] outline-none"></textarea>
+            <div class="text-center mt-4 hover:scale-105 duration-500"><button class="border border-gray-200 outline-none hover:scale-105 duration-500 cursor-pointer bg-[#5D40EF] rounded-lg text-white font-bold hover:bg-[#DE75F3] transform py-2 px-6" id="submit">Submit</button></div>
+        </div>
+    </div>
+    
+
+    <!-- About me -->
+
+    <div class="mt-10 px-8 md:flex xl:mx-20 xl:gap-10">
+        <div class="lg:mt-10 xl:mt-16">
+            <p class="text-5xl font-bold"><span class="mr-3">I'm</span><span class="bg-gradient-to-r from-[#5D40EF] to-[#DE75F3] bg-clip-text text-transparent">Theogene</span></p>
+            <p class="text-5xl font-bold bg-gradient-to-r from-[#5D40EF] to-[#DE75F3] bg-clip-text text-transparent w-64 mt-3 mb-6">IGIRANEZA</p>
+            <p class="text-xl text-gray-500 dark:text-gray-300">I buld robust, scalable web applications from frontend to backed, creating seamless digital exprience that perfom at scale.</p>
+            <div class="mt-6 flex gap-3">
+                <p class="bg-[#5D40EF] rounded-lg text-white font-semibold hover:bg-[#DE75F3] transform duration-100 py-2 px-3"><a href="https://drive.google.com/file/d/1b9FwwvsUGigMCqyh06txFKO1YyretkFq/view" target="_blank"><i class="fa-solid fa-download"></i> Dwnload Resume</a></p>
+                <p class="py-2 px-3 border-2 hover:bg-[#5D40EF] text-[#5D40EF] font-semibold hover:text-white transform duration-200 rounded-lg border-[#5D40EF]"><a href="https://github.com/Theogene120/Portfolio-assignment-" target="_blank">Veiw Github</a></p>
+            </div>
+        </div>
+        <div class="mt-20 md:mt-0 overflow-hidden rounded-full animate-slowbounce">
+            <img class="rounded-full transform duration-500 hover:scale-105 " src="/realme.jpg" alt="Theogene">
+        </div>
+    </div>
+
+    <!-- Technology Stack -->
+
+    <div class="pt-24 xl:mx-16" id="technology">
+        <div class="mx-4">
+            <h1 class="text-3xl font-bold text-center" >Technology Stack</h1>
+            <p class="text-center mt-4  text-gray-500 dark:text-gray-300">From frontend frameworks to backend infrastructure, I work modern technologies to <br class="hidden md:block"> build complete solutions.</p>
+        </div>
+        <!-- Cards -->
+        <div class="md:grid md:grid-cols-2 lg:grid-cols-3  md:mx-4 md:gap-8">
+            <div class="flex rounded-lg border border-gray-300 mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white group-hover:animate-bounce  text-3xl bg-[#5D40EF] py-3 px-4 rounded-full [animation-duration:6s]"><i class="fa-solid fa-globe"></i></p>
+                <p class="text-xl font-bold dark:text-white">Frontend</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">React, Next.js, TypeScript, and modern CSS frameworks for beautiful user interfaces.</p>
+            </div>
+            <div class="flex border rounded-lg border-gray-300  mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white group-hover:animate-bounce text-3xl bg-[#5D40EF] py-3 px-4 rounded-full"><i class="fa-solid fa-server"></i></p>
+                <p class="text-xl font-bold dark:text-white">Backend</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">Node.js, Express.js, Python, and Serverless architectures for robust APIs.</p>
+            </div>
+            <div class="flex border rounded-lg border-gray-300  mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 md:mt-8 lg:mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white group-hover:animate-bounce text-3xl bg-[#5D40EF] py-3 px-4 rounded-full"><i class="fa-solid fa-database"></i></p>
+                <p class="text-xl font-bold dark:text-white">Database</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">PostgreSQL, MongoDB, and cloud databases for efficient data management.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stills -->
+
+    <div class="pt-24" id="skills">
+        <div class="mb-10">
+            <h1 class="text-3xl font-bold text-center" >Skills & Technologies</h1>
+            <p class="text-center mt-4  text-gray-500 dark:text-gray-300">The tools and technologies I use to build scalable, maintainable applicatios.</p>
+        </div>
+
+        <!-- Cards -->
+        
+        <div class="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 sm:mx-20  mt-10">
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">HTML5</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">PRO</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray- dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">CSS</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">PRO</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">JavaScript</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M9.633 7.968h3.751v10.514c0 4.738-2.271 6.392-5.899 6.392-0.888 0-2.024-0.148-2.764-0.395l0.42-3.036c0.518 0.173 1.185 0.296 1.925 0.296 1.58 0 2.567-0.716 2.567-3.282v-10.489zM16.641 20.753c0.987 0.518 2.567 1.037 4.171 1.037 1.728 0 2.641-0.716 2.641-1.826 0-1.012-0.79-1.629-2.789-2.32-2.764-0.987-4.59-2.517-4.59-4.961 0-2.838 2.394-4.985 6.293-4.985 1.9 0 3.258 0.37 4.245 0.839l-0.839 3.011c-0.642-0.321-1.851-0.79-3.455-0.79-1.629 0-2.419 0.765-2.419 1.604 0 1.061 0.913 1.53 3.085 2.369 2.937 1.086 4.294 2.616 4.294 4.985 0 2.789-2.122 5.158-6.688 5.158-1.9 0-3.776-0.518-4.714-1.037l0.765-3.085z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Semi-PRO</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">Flutter</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Intermadiate</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">Dart</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Intermadiate</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">React Js</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 34 32" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M19.314 15.987c0 1.321-1.071 2.392-2.392 2.392s-2.392-1.071-2.392-2.392c0-1.321 1.071-2.392 2.392-2.392s2.392 1.071 2.392 2.392z"></path><path d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906 0.489 0 0.952-0.103 1.337-0.334 1.337-0.772 1.826-2.701 1.363-5.453-0.077-0.489-0.18-0.977-0.309-1.492 0.514-0.154 0.977-0.309 1.44-0.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-0.463-0.18-0.926-0.334-1.44-0.463 0.129-0.514 0.232-1.003 0.309-1.492 0.437-2.803-0.051-4.758-1.389-5.53-0.386-0.231-0.849-0.334-1.337-0.334-1.466 0-3.344 1.080-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-0.489 0-0.952 0.103-1.337 0.334-1.337 0.772-1.826 2.701-1.363 5.453 0.077 0.489 0.18 0.977 0.309 1.492-0.514 0.154-0.977 0.309-1.44 0.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909 0.463 0.18 0.926 0.334 1.44 0.463-0.129 0.514-0.232 1.003-0.309 1.492-0.437 2.752 0.051 4.707 1.363 5.453 0.386 0.232 0.849 0.334 1.337 0.334 1.492 0.051 3.344-1.029 5.221-2.829v0zM15.481 21.311c0.463 0.026 0.952 0.026 1.44 0.026s0.977 0 1.44-0.026c-0.463 0.617-0.952 1.183-1.44 1.723-0.489-0.54-0.977-1.106-1.44-1.723zM12.292 18.662c0.257 0.437 0.489 0.849 0.772 1.26-0.797-0.103-1.543-0.232-2.263-0.386 0.232-0.694 0.489-1.415 0.797-2.135 0.206 0.411 0.437 0.849 0.694 1.26zM10.8 12.463c0.72-0.154 1.466-0.283 2.263-0.386-0.257 0.412-0.514 0.823-0.772 1.26s-0.489 0.849-0.694 1.286c-0.334-0.746-0.592-1.466-0.797-2.161zM12.215 15.987c0.334-0.694 0.694-1.389 1.106-2.083 0.386-0.669 0.823-1.337 1.26-2.006 0.772-0.051 1.543-0.077 2.341-0.077 0.823 0 1.595 0.026 2.341 0.077 0.463 0.669 0.874 1.337 1.26 2.006 0.412 0.694 0.772 1.389 1.106 2.083-0.334 0.694-0.694 1.389-1.106 2.083-0.386 0.669-0.823 1.337-1.26 2.006-0.772 0.051-1.543 0.077-2.341 0.077-0.823 0-1.595-0.026-2.341-0.077-0.463-0.669-0.874-1.337-1.26-2.006-0.412-0.695-0.772-1.389-1.106-2.083v0zM22.272 14.598l-0.694-1.286c-0.257-0.437-0.489-0.849-0.772-1.26 0.797 0.103 1.543 0.232 2.263 0.386-0.231 0.72-0.489 1.44-0.797 2.161v0zM22.272 17.376c0.309 0.72 0.566 1.44 0.797 2.135-0.72 0.154-1.466 0.283-2.263 0.386 0.257-0.412 0.514-0.823 0.772-1.26 0.232-0.386 0.463-0.823 0.694-1.26v0zM22.863 26.301c-0.206 0.129-0.463 0.18-0.746 0.18-1.26 0-2.829-1.029-4.372-2.572 0.746-0.797 1.466-1.698 2.186-2.701 1.209-0.103 2.366-0.283 3.447-0.54 0.129 0.463 0.206 0.926 0.283 1.389 0.36 2.186 0.077 3.755-0.797 4.244zM24.201 12.746c2.881 0.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-0.412 0.154-0.874 0.309-1.337 0.437-0.334-1.055-0.746-2.135-1.26-3.241 0.514-1.106 0.952-2.186 1.26-3.241v0zM22.143 5.493c0.283 0 0.514 0.051 0.746 0.18 0.849 0.489 1.157 2.032 0.797 4.244-0.077 0.437-0.18 0.9-0.283 1.389-1.080-0.232-2.238-0.412-3.447-0.54-0.694-1.003-1.44-1.903-2.186-2.701 1.543-1.518 3.112-2.572 4.372-2.572zM18.362 10.663c-0.463-0.026-0.952-0.026-1.44-0.026s-0.977 0-1.44 0.026c0.463-0.617 0.952-1.183 1.44-1.723 0.489 0.54 0.977 1.132 1.44 1.723v0zM10.98 5.673c0.206-0.129 0.463-0.18 0.746-0.18 1.26 0 2.829 1.029 4.372 2.572-0.746 0.797-1.466 1.697-2.186 2.701-1.209 0.103-2.366 0.283-3.447 0.54-0.129-0.463-0.206-0.926-0.283-1.389-0.36-2.186-0.077-3.729 0.797-4.244v0zM9.643 19.228c-2.881-0.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803 0.412-0.154 0.874-0.309 1.337-0.437 0.334 1.055 0.746 2.135 1.26 3.241-0.514 1.106-0.952 2.212-1.26 3.241zM10.183 22.057c0.077-0.437 0.18-0.9 0.283-1.389 1.080 0.232 2.238 0.412 3.447 0.54 0.694 1.003 1.44 1.903 2.186 2.701-1.543 1.517-3.112 2.572-4.372 2.572-0.283 0-0.514-0.051-0.746-0.18-0.875-0.489-1.157-2.058-0.797-4.244z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Semi-PRO</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">GitHub</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><path d="M26.852 15.281l-9.848-9.848c-0.567-0.567-1.487-0.567-2.054 0l-2.045 2.045 2.594 2.594c0.603-0.204 1.294-0.067 1.775 0.413 0.483 0.483 0.619 1.181 0.41 1.786l2.5 2.5c0.605-0.209 1.303-0.074 1.786 0.41 0.675 0.675 0.675 1.769 0 2.444s-1.769 0.675-2.445 0c-0.508-0.508-0.633-1.254-0.376-1.88l-2.332-2.332v6.136c0.164 0.082 0.32 0.19 0.457 0.327 0.675 0.675 0.675 1.769 0 2.445-0.675 0.675-1.77 0.675-2.444 0-0.675-0.676-0.675-1.77 0-2.445 0.167-0.167 0.36-0.293 0.566-0.377v-6.193c-0.206-0.084-0.399-0.209-0.566-0.377-0.511-0.511-0.634-1.262-0.372-1.889l-2.557-2.558-6.753 6.752c-0.567 0.568-0.567 1.488 0 2.055l9.849 9.848c0.567 0.567 1.486 0.567 2.054 0l9.802-9.802c0.567-0.567 0.567-1.488 0-2.055z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Semi-PRO</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">MySql</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z"></path></svg></p>
+                <p class="text-2xl text-gray-700 font-bold dark:text-white">Intermadiate</p>
+            </div>
+        </div>
+    </div>
+    <div class="pt-20">
+        <div class="pb-10">
+            <h1 class="text-3xl font-bold text-center">Tools I Use</h1>
+        </div>
+        <div class="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 sm:mx-20  mt-10">
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">VS CODE</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"></path></svg></p>
+                <p class="text-2xl text-gray-700 dark:text-white font-bold">Semi-Pro</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">Android Studio</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M19.2693 10.3368c-.3321 0-.6026.2705-.6026.6031v9.8324h-1.7379l-3.3355-6.9396c.476-.5387.6797-1.286.5243-2.0009a2.2862 2.2862 0 0 0-1.2893-1.6248v-.8124c.0121-.2871-.1426-.5787-.4043-.7407-.1391-.0825-.2884-.1234-.4402-.1234a.8478.8478 0 0 0-.4318.1182c-.2701.1671-.4248.4587-.4123.7662l-.0003.721c-1.0149.3668-1.6619 1.4153-1.4867 2.5197a2.282 2.282 0 0 0 .5916 1.2103l-3.2096 6.9064H4.0928c-1.0949-.007-1.9797-.8948-1.9832-1.9896V5.016c-.0055 1.1024.8836 2.0006 1.9859 2.0062a2.024 2.024 0 0 0 .1326-.0037h14.7453s2.5343-.2189 2.8619 1.5392c-.2491.0287-.4449.2321-.4449.4889 0 .7115-.5791 1.2901-1.3028 1.2901h-.8183zM17.222 22.5366c.2347.4837.0329 1.066-.4507 1.3007-.1296.0629-.2666.0895-.4018.0927a.9738.9738 0 0 1-.3194-.0455c-.024-.0078-.046-.0209-.0694-.0305a.9701.9701 0 0 1-.2277-.1321c-.0247-.0192-.0495-.038-.0724-.0598-.0825-.0783-.1574-.1672-.21-.2757l-1.2554-2.6143-1.5585-3.2452a.7725.7725 0 0 0-.6995-.4443h-.0024a.792.792 0 0 0-.7083.4443l-1.5109 3.2452-1.2321 2.6464a.9722.9722 0 0 1-.7985.5795c-.0626.0053-.1238-.0024-.185-.0087-.0344-.0036-.069-.0053-.1025-.0124-.0489-.0103-.0954-.0278-.142-.0452-.0301-.0113-.0613-.0197-.0901-.0339-.0496-.0244-.0948-.0565-.1397-.0889-.0217-.0156-.0457-.0275-.0662-.045a.9862.9862 0 0 1-.1695-.1844.9788.9788 0 0 1-.0708-.9852l.8469-1.8223 3.2676-7.0314a1.7964 1.7964 0 0 1-.7072-1.1637c-.1555-.9799.5129-1.9003 1.4928-2.0559V9.3946a.3542.3542 0 0 1 .1674-.3155.3468.3468 0 0 1 .3541 0 .354.354 0 0 1 .1674.3155v1.159l.0129.0064a1.8028 1.8028 0 0 1 1.2878 1.378 1.7835 1.7835 0 0 1-.6439 1.7836l3.3889 7.0507.8481 1.7643zM12.9841 12.306c.0042-.6081-.4854-1.1044-1.0935-1.1085a1.1204 1.1204 0 0 0-.7856.3219 1.101 1.101 0 0 0-.323.7716c-.0042.6081.4854 1.1044 1.0935 1.1085h.0077c.6046 0 1.0967-.488 1.1009-1.0935zm-1.027 5.2768c-.1119.0005-.2121.0632-.2571.1553l-1.4127 3.0342h3.3733l-1.4564-3.0328a.274.274 0 0 0-.2471-.1567zm8.1432-6.7459l-.0129-.0001h-.8177a.103.103 0 0 0-.103.103v12.9103a.103.103 0 0 0 .0966.103h.8435c.9861-.0035 1.7836-.804 1.7836-1.79V9.0468c0 .9887-.8014 1.7901-1.7901 1.7901zM2.6098 5.0161v.019c.0039.816.6719 1.483 1.4874 1.4869a12.061 12.061 0 0 1 .1309-.0034h1.1286c.1972-1.315.7607-2.525 1.638-3.4859H4.0993c-.9266.0031-1.6971.6401-1.9191 1.4975.2417.0355.4296.235.4296.4859zm6.3381-2.8977L7.9112.3284a.219.219 0 0 1 0-.2189A.2384.2384 0 0 1 8.098 0a.219.219 0 0 1 .1867.1094l1.0496 1.8158a6.4907 6.4907 0 0 1 5.3186 0L15.696.1094a.2189.2189 0 0 1 .3734.2189l-1.0302 1.79c1.6671.9125 2.7974 2.5439 3.0975 4.4018l-12.286-.0014c.3004-1.8572 1.4305-3.488 3.0972-4.4003zm5.3774 2.6202a.515.515 0 0 0 .5271.5028.515.515 0 0 0 .5151-.5151.5213.5213 0 0 0-.8885-.367.5151.5151 0 0 0-.1537.3793zm-5.7178-.0067a.5151.5151 0 0 0 .5207.5095.5086.5086 0 0 0 .367-.1481.5215.5215 0 1 0-.734-.7341.515.515 0 0 0-.1537.3727z"></path></svg></p>
+                <p class="text-2xl text-gray-700 dark:text-white font-bold">Semi-Pro</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">Figma</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"></path></svg></p>
+                <p class="text-2xl text-gray-700 dark:text-white font-bold">Intermadiate</p>
+            </div>
+            <div class="flex flex-col group bg-gray-200 dark:border-gray-700 hover:scale-105 duration-300 shadow-all mx-10 sm:mx-0 rounded-lg justify-center items-center py-5 gap-4 border border-gray-400 dark:bg-gray-900">
+                <p class="text-3xl text-[#5D40EF] font-extrabold">Vercel</p>
+                <p class="text-purple-500 group-hover:-translate-y-2 duration-300 transform mt-8"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="4em" width="4em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M24 22.525H0l12-21.05 12 21.05z"></path></svg></p>
+                <p class="text-2xl text-gray-700 dark:text-white font-bold">Intermadiate</p>
+            </div>
+        </div>
+    </div>
+    <!-- Experience -->
+    <div class="pt-24" id="experience">
+        <div class="mb-4">
+            <h1 class="text-4xl font-bold text-center">Experiences</h1>
+            <p  class="text-center mt-4  text-gray-500 dark:text-gray-300">My professional journey in full-stack development and system architectures.</p>
+        </div>
+        <div class="border-l-4 border-[#5D40EF] mx-4 md:mx-10 group rounded-xl mt-10 bg-gray-100 hover:shadow-2xl duration-500 dark:bg-gray-900">
+            <div class="border-r border-b border-t border-gray-300 dark:border-gray-700 rounded-xl py-6">
+                <div class="px-5 flex justify-between"><p class="text-[23px] font-bold">Junior Developer</p><p class="text-[#5D40EF] font-semibold text-[12px] md:text-[15px] bg-gray-200 dark:border-gray-700 dark:bg-gray-600 p-2 rounded-full px-4">2025 - Present</p></div>
+                <p class="px-5 dark:text-white text-lg font-semibold text-gray-800 tracking-widest py-2 pb-5 group-hover:text-[#5D40EF] group-hover:font-extrabold duration-75 ">The Gym Rwanda</p>
+                <p class="px-5 text-gray-800 tracking-wider dark:text-gray-300 ">
+                    Developmet full-stack features using MERN stack ( 
+                    The MERN stack is a popular collection of JavaScript-based technologies 
+                    used for building full-stack web applications.), collaborated in agile teams, 
+                    and gained expertise in cloud development
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hobbies and interest -->
+    
+    <div class="pt-24" id="hobbies">
+        <div class="mb-10">
+            <h1 class="text-3xl font-bold text-center" >Hobbies and Interest</h1>
+            <p class="text-center mt-4  text-gray-500 dark:text-gray-300">A showcase of my recent work and personal projects that demonstrate my skills and creativity.</p>
+        </div>
+        <div class="md:grid md:grid-cols-2 lg:grid-cols-3  md:mx-4 md:gap-8">
+            <div class="flex rounded-lg border border-gray-300 mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white group-hover:-translate-y-2 duration-500 text-3xl bg-[#5D40EF] py-3 px-4 rounded-full"><i class="fa-solid fa-book-open"></i></p>
+                <p class="text-xl group-hover:text-[#DE75F3] font-bold">Reading</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">Tech blogs and sci-fi novels</p>
+            </div>
+            <div class="flex border rounded-lg border-gray-300  mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white  group-hover:-translate-y-2 duration-500 text-3xl bg-[#5D40EF] py-3 px-4 rounded-full"><i class="fa-solid fa-music"></i></p>
+                <p class="text-xl group-hover:text-[#DE75F3] font-bold">Music</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">Playing piano and discovering new artists</p>
+            </div>
+            <div class="flex border rounded-lg border-gray-300  mx-4 sm:mx-32 md:mx-0 py-8 bg-gray-100 hover:bg-gray-200 dark:border-gray-700 duration-300 hover:shadow-all gap-4 group  flex-col mt-16 md:mt-8 lg:mt-16 justify-center items-center dark:bg-gray-900">
+                <p class=" text-white group-hover:-translate-y-2 text-3xl bg-[#5D40EF] duration-500 py-3 px-4 rounded-full"><i class="fa-solid fa-person-hiking"></i></p>
+                <p class="text-xl font-bold group-hover:text-[#DE75F3]">Hiking</p>
+                <p class="text-center text-gray-500 px-6 dark:text-gray-300">Exploring nature trails and mountains</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- video -->
+
+    <div class="mt-10 md:flex justify-between items-center lg:mr-20 md:mr-6 xl:ml-32 xl:mr-72">
+        <div class="max-w-2xl p-4">
+            <p class="text-xl font-bold group-hover:text-[#DE75F3] py-5 text-center">ONE OF THE MUSIC</p>
+            <video class="w-full rounded-lg h-80 md:h-72 lg:h-80 shadow-lg" controls autoplay loop muted>
+                <source src="/1da-Banton-No Wahala.mp4" type="video/mp4" />
+                Your browser does not support the video tag
+            </video>
+        </div>
+
+        <!-- Leave the comment -->
+
+        <div class="mt-5 ml-10">
+            <div class="flex "><p id="leave" class="border border-gray-400 cursor-pointer bg-[#5D40EF] rounded-lg text-white font-semibold hover:bg-[#DE75F3] transform duration-100 py-4 px-6">Leave a Review</p></div> 
+        </div>
+
+    </div>
+
+    
+    
+    <!-- Footer -->
+    
+    <footer class="mt-10 pt-20 pb-4 lg:pt-0 lg:pb-4  flex flex-col justify-center items-center gap-10 bg-gray-300 dark:bg-gray-900">
+        <div class="lg:flex lg:gap-20 xl:gap-32 lg:justify-between">
+            <div class="text-center lg:pt-20">
+                <p class="tracking-widest">Designed and Developed by <span class="font-bold">IGIRANEZA Theogene</span>, <br> Best is yet to be stay with me 🫡</p>
+            </div>
+            <div class="text-center border-b mt-10 mx-6 flex flex-col justify-center items-center border-gray-400 lg:border-none pb-4 lg:pt-4">
+                <p class="text-lg font-bold tracking-widest">Connect with me:</p>
+                <div class="flex gap-5 md:gap-10 mt-4">
+                    <a href="https://github.com/Theogene120/Portfolio-assignment-" target="_blank" class="hover:bg-[#5D40EF] py-2 px-3 duration-300 hover:text-white rounded-full"><i class="fa-brands fa-github"></i></a>
+                    <a href="linkedin.com" target="_blank"  class="hover:bg-[#5D40EF] py-2 px-3 duration-300 hover:text-white rounded-full"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/home" target="_blank"  class="hover:bg-[#5D40EF] py-2 px-3 duration-300 hover:text-white rounded-full"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"  class="hover:bg-[#5D40EF] py-2 px-3 duration-300 hover:text-white rounded-full"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="whatsapp.com" target="_blank"  class="hover:bg-[#5D40EF] py-2 px-3 duration-300 hover:text-white rounded-full"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="order-1 lg:border-t border-gray-400 pt-10">
+            <p class="font-light tracking-widest text-[12px]">Copyright &copy; 2025 Theogene Igiraneza</p>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
